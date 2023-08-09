@@ -66,12 +66,12 @@
   justify-content: space-between;
   align-items: center;
   height: 760px;
-  padding: 170px 50px 50px;
+  padding: 165px 50px 50px;
   background-image: url('/images/cover.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   /* TODO: придумать, как исправить костыль с фоном */
-  background-position: 0 -13px;
+  background-position: 0 -17px;
 }
 
 .overlay {
@@ -105,11 +105,12 @@
 
 .aligned-text_center {
   text-align: center;
+  line-height: 1.2em;
 }
 
 .aligned-text_right {
   /* TODO пока ощущается как костыль */
-  line-height: 1.1em;
+  line-height: 1em;
   text-align: right;
 }
 
