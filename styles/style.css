@@ -1,14 +1,14 @@
 .header {
-  padding: 92px 49px 92px 51px;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
+  padding: 92px 49px 92px 51px;
 }
 
 .header__menu {
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 
@@ -19,14 +19,23 @@
   list-style-type: circle;
 }
 
+.header__link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-left: 2px;
+}
+
+.header__link_active {
+  border: none;
+}
+
 .header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
 .header__logo {
-  width: 148px;
-  height: 105px;
   justify-self: center;
+  width: 148px;
 }
 
 .header__logo-image {
@@ -35,12 +44,113 @@
 }
 
 .address {
+  justify-self: end;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  justify-self: end;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 135%;
+}
+
+.address a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 760px;
+  padding: 170px 50px 50px;
+  background-image: url('/images/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* TODO: придумать, как исправить костыль с фоном */
+  background-position: 0 -13px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 1340px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  font-style: normal;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  /* TODO пока ощущается как костыль */
+  line-height: 1.1em;
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.cover__description-text {
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #fff;
+  grid-column: 2;
+  word-spacing: 17px;
+  margin-left: 30px;
+}
+
+.bet-button {
+  padding: 12px 32px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid white;
+  color: #fff;
+  font-size: 22px;
+  justify-self: end;
 }
