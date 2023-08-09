@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
-  padding: 92px 49px 92px 51px;
+  align-items: center;
+  padding: 90px 50px;
 }
 
 .header__menu {
@@ -14,15 +15,14 @@
 
 .header__links-list {
   display: flex;
-  /* TODO подогнатьь размер */
   gap: 30px;
   list-style-type: circle;
 }
 
 .header__link {
-  text-decoration: none;
   border-bottom: 1px solid black;
   padding-left: 2px;
+  text-decoration: none;
 }
 
 .header__link_active {
@@ -35,19 +35,21 @@
 
 .header__logo {
   justify-self: center;
-  width: 148px;
+  align-self: center;
 }
 
 .header__logo-image {
-  width: 148px;
-  height: 105px;
+  width: 135px;
+  height: 110px;
 }
 
 .address {
   justify-self: end;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  /* pixel perfect */
+  padding-top: 1px;
+  padding-right: 2px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -55,8 +57,8 @@
 }
 
 .address a {
-  text-decoration: none;
   border-bottom: 1px solid black;
+  text-decoration: none;
 }
 
 .cover {
@@ -65,13 +67,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 760px;
+  gap: 135px;
   padding: 165px 50px 50px;
   background-image: url('/images/cover.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+
   /* TODO: придумать, как исправить костыль с фоном */
   background-position: 0 -17px;
+  background-size: cover;
 }
 
 .overlay {
@@ -104,8 +107,8 @@
 }
 
 .aligned-text_center {
-  text-align: center;
   line-height: 1.2em;
+  text-align: center;
 }
 
 .aligned-text_right {
@@ -123,35 +126,35 @@
 }
 
 .cover__description {
-  width: 100%;
   position: relative;
-  display: flex;
-  justify-content: start;
-  align-items: center;
   z-index: 1;
+  display: flex;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
 }
 
 .cover__description-text {
-  text-align: center;
+  grid-column: 2;
+  margin-left: 30px;
+  color: #fff;
+  font-weight: 400;
   font-size: 22px;
   font-style: normal;
-  font-weight: 400;
   line-height: 28px;
+  text-align: center;
   text-transform: uppercase;
-  color: #fff;
-  grid-column: 2;
   word-spacing: 17px;
-  margin-left: 30px;
 }
 
 .bet-button {
-  padding: 12px 32px;
-  background-color: transparent;
-  text-transform: uppercase;
+  justify-self: end;
   border: 1px solid white;
+  padding: 12px 32px;
   color: #fff;
   font-size: 22px;
-  justify-self: end;
+  text-transform: uppercase;
+  background-color: transparent;
 }
