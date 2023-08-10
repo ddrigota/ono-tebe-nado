@@ -7,10 +7,7 @@
 }
 
 .header__menu {
-  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  line-height: normal;
 }
 
 .header__links-list {
@@ -20,13 +17,13 @@
 }
 
 .header__link {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
   padding-left: 2px;
   text-decoration: none;
 }
 
 .header__link_active {
-  border: none;
+  border-bottom: none;
 }
 
 .header__links-list-item_no-bullit {
@@ -50,14 +47,12 @@
   /* pixel perfect */
   padding-top: 1px;
   padding-right: 2px;
-  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
   line-height: 135%;
 }
 
 .address a {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
   text-decoration: none;
 }
 
@@ -93,7 +88,6 @@
   color: #fff;
   font-weight: 700;
   font-size: 100px;
-  font-style: normal;
   line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
@@ -137,9 +131,7 @@
   grid-column: 2;
   margin-left: 30px;
   color: #fff;
-  font-weight: 400;
   font-size: 22px;
-  font-style: normal;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -274,16 +266,14 @@
 }
 
 .footer {
-  margin: 185px 50px 90px 50px;
   display: flex;
   justify-content: space-between;
   align-items: start;
+  margin: 185px 50px 90px 50px;
 }
 
 .footer__menu {
   font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
   text-align: center;
 }
 
@@ -292,9 +282,9 @@
 }
 
 .footer__social-list {
-  list-style: none;
   display: flex;
   gap: 48px;
+  list-style: none;
 }
 
 .footer__social-icon {
@@ -302,8 +292,8 @@
 }
 
 .footer__menu-link {
-  text-decoration: none;
   border-bottom: 1px solid #000;
+  text-decoration: none;
 }
 
 .footer__menu-link_active {
