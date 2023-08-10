@@ -157,7 +157,7 @@
 }
 
 .lots {
-  margin: 180px 50px;
+  margin: 180px 50px 0 50px;
 }
 
 .lots__heading {
@@ -232,4 +232,43 @@
   color: #000;
   font-weight: 400;
   font-size: 20px;
+}
+
+.about {
+  margin: 150px 50px;
+  display: grid;
+  grid-template-columns: 430px 1fr;
+}
+
+.about__logo {
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 95px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about__logo-image {
+  display: block;
+  width: 148px;
+}
+
+.about__title {
+  align-self: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+
+.about__text {
+  grid-area: 2 / 2 / 3 / 3;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  padding-top: 10px;
+  padding-left: 24px;
 }
